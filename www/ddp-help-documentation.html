@@ -2,10 +2,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Help documentation: Student project: Developing Data Products - Dec 2014</title>
+  <style type="text/css">
+    p {font-family:Tahoma;font-size:10pt;}
+    li {font-family:Tahoma;font-size:10pt;}
+  </style>
 </head>
 <body>
-  <p halign="center" width="60%">
-    <span style="color:red">
-  Disclaimer: This is a student project. The prediction shown here should not be used for any clinical or legal purpose.</span></p>
+<p>
+  The source code for this project is available <a href="https://github.com/GopinathanB/ddp-shiny">on GitHub</a>.
+</p>
+<p><span style="font-size:xx-large;">Usage Notes</span>:
+<br/><span style="font-size:larger;">Providing input</span>:
+  <ul>
+    <li>The first slider on the left allows you to provide the dose of the drug (in milligrams - mg) provided to the subject. Range = 265 to 325 mg, in steps of 0.1 mg. Default = 315 mg.</li>
+    <li>The second slider on the left allows you to indicate the number of hours that have passed since the dose was given to the subject. Range = 0 to 24 hours, in steps of 1/2 hour. Default = 4 hours</li>
+  </ul>
+  &nbsp;
+<br/><span style="font-size:larger;">Observing output</span>:  
+<ul>
+  <li>The first line of output shows the input provided.</li>
+  <li>A plot of the data values are shown as indicated. X-axis is the time since the dose was provided, and Y-axis is the drug concentration for 6 subjects in mg/L.<br/>The blue line indicates a linear fit, and the red line indicates the hours provided as input.</li>
+  <li>The prediction from the model is also shown (units = mg/L).</li>
+</ul>
+</p>
+  <p halign="center" width="60%" style="color:red;font-size:9pt;">
+  Disclaimer: This is a student project. The prediction shown here should not be used for any clinical or legal purpose.</p>
 </body>
 </html>
